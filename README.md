@@ -1,2 +1,2 @@
-# Portfolio-CP-Radingka-Rocha-Arfian
-Created as part of the portfolio fulfillment for the Internship of Competitive Programming division in Basic Computing Community.
+# Basic Website-Based Portfolio
+This website utilizes the fundamentals of CSS syntax and concepts, including class selectors, hover states, pseudo-elements, transitions, transforms, grid layout, z-index, and more. It also applies core HTML syntax and structure, such as link rel, href, meta, title, span, p, heading tags, div, anchor tags, italic, and button elements.
