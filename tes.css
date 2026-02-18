@@ -1,0 +1,436 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+section{
+    scroll-margin-top: 25px;
+}
+
+.LJ, .CTF, .ED, .CNT{
+    padding: 10px;
+    font-size:larger;
+    color: azure;
+    transition:background 0.2s,color 0.2s;
+}
+.PILIHAN{
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    position: fixed;
+    gap: 40px;
+    margin-right: 40px;
+    top:0;
+    left: 0;
+    width: 100%;
+    background-color:rgba(0,31,63,0.9);
+    padding: 10px 40px;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.ABT{
+    font-size: 34px;
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: 40px;
+    color: azure;
+    transition: background 0.2s,color 0.3s;
+    padding: 10px;
+}
+
+.ABT:hover, .LJ:hover, .CTF:hover, .ED:hover, .CNT:hover{
+    color:rgba(255, 255, 255,0.8);
+    cursor: pointer;
+}
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.HEAD{
+    padding-top:  300px;
+    margin-left: 100px;
+    font-size: 50px;
+    margin-bottom: 10px;
+    line-height: 30px;
+    color:white;
+}
+
+.CON{
+    margin-left: 100px;
+    font-size: 50px;
+    line-height: 30px;
+    margin-bottom: 40px;
+    color:white;
+}
+
+.BX{
+    margin-left: 100px;
+    margin-right: 91.25rem;
+    border: 3px solid lightblue;
+    margin-bottom: 100px;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+    transition: border-color 0.4s, transform 0.4s;
+}
+
+.BX:hover{
+    border-color: blueviolet;
+}
+
+.BX h1{
+    font-size:25px;
+    line-height: 10px;
+    color: white;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+.BX:hover h1{
+    color: rgb(199, 197, 197);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+
+.BG1{
+    background: url(BG1.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    position: relative;
+    overflow: hidden;
+    transform: scale(1.02);
+    height: 100%;
+}
+
+.J1{
+    padding-top: 150px;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 100px;
+    color:azure;
+}
+
+.J1B{
+    width: 40vw;
+    display: flex;
+    left: 29%;
+    position: relative;
+    gap: -150px;
+    margin-bottom: 50px;
+}
+
+.BT{
+    font-size: medium;
+    flex: 1;
+    padding: 20px;
+}
+
+.BI{
+    flex:1;
+    height: 30vh;
+}
+
+.BI img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.HD{
+    text-align: center;
+    margin-bottom: 10px;
+    color:azure;
+}
+
+.PI{
+    font-style: italic;
+    color:azure;
+}
+
+.B1{
+    background:linear-gradient(90deg, rgb(199, 252, 199),rgb(204, 219, 255));
+    background-size: 400% 100%;
+    width: 100vw;
+    background-position: right;
+    height: 100vh;
+    position: relative;
+    top: -38px;
+    animation: animate 10s ease infinite;
+    left: -8px;
+}
+
+@keyframes animate {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.B2{
+    background:linear-gradient(90deg, rgb(255, 255, 255),rgba(240, 240, 240));
+    background-size: 100% 100%;
+    width: 100vw;
+    background-position: right;
+    height: 240vh;
+    position: relative;
+    top: -15px;
+    animation: animate 15s ease infinite;
+    left: -8px;
+}
+
+.J2{
+    padding-top: 150px;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 100px;
+    color:black;
+}
+
+.J2X{
+    padding-top: 150px;
+    text-decoration: underline;
+    text-align: center;
+    color: black;
+    margin-bottom: 100px;
+}
+.CTF-GRID{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:2rem;
+    margin: 50px;
+}
+.CTF-GRID2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2rem;
+    margin: 50px;
+}
+
+.CTF-CARD{
+    background: white;
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    padding: 2rem;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.CTF-CARD:hover{
+    border-color: navy;
+    transform: translateY(-5px);
+}
+
+.CTF-H3{
+    text-align: center;
+}
+
+.CTF-CARD img{
+    display:block;
+    object-fit: scale-down;
+    width: 100%;
+    height: auto;
+}
+.CTF-CARD p{
+    text-align: center;
+    font-style: italic;
+}
+
+.ED-GRID{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 50px;
+    gap: 50px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.ED-CARD{
+    background: white;
+    border: 3px solid rgb(169, 158, 158);
+    border-radius: 8px;
+    padding: 2rem;
+    transition: border-color 1s, transform 0.5s;
+}
+
+.ED-CARD img{
+    display: block;
+    object-fit: scale-down;
+    width: 100%;
+    height: auto;
+}
+
+.ED-CARD:hover{
+    transform: translateY(-8px);
+    border-color: #047a02;
+    cursor: pointer;
+}
+
+.ED-CARD p{
+    font-style: italic;
+    text-align: center;
+}
+
+.ED-CARD h3{
+    text-align: center;
+}
+
+
+.LJ-TML{
+    position: relative;
+    padding-left: 10rem;
+    min-height: 500px;
+    z-index: 1;
+}
+
+.LJ-TML::before{
+    content: '';
+    position: absolute;
+    left: 36.5rem;
+    bottom: 0px;
+    top: 0px;
+    width: 2px;
+    background: rgb(0, 0, 0);
+}
+
+.LJ-B{
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 28rem;
+}
+
+.LJ-B:before{
+    content: '';
+    position: absolute;
+    left: 26rem;
+    top: 0px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color:  navy;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 0 0 2px navy;
+}
+
+.LJ-B h3{
+    color: navy;
+    margin-bottom: 0.5rem;
+}
+
+.LJ-B p{
+    color: gray;
+}
+
+.LJ-TML-EX{
+    position: relative;
+    left: 36.5rem;
+    width: 2px;
+    background: black;
+    min-height: 15px;
+    top: -45px;
+    margin-bottom: 3px;
+}
+
+.LJ-TML-EX-END{
+    position: relative;
+    left: 36.5rem;
+    width: 2px;
+    background: black;
+    min-height: 15px;
+    top: -45px;
+}
+
+.B3{
+    background: linear-gradient(45deg, rgb(255, 255, 255),rgb(251, 245, 245));
+    background-size: 200% 100%;
+    animation: animate 5s ease infinite;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    margin-left: -8px;
+    background-position: left;
+    z-index: 1;
+    height: 161.58vh;
+    top: -60px;
+}
+
+footer{
+    background-position: left;
+    background: rgba(0,31,63,0.9);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 100%;
+    position: relative;
+    padding-right: 0.8%;
+}
+
+
+.CNT-BOX{
+    padding-top: 15px;
+}
+
+.CNT-ICARR{
+    display: flex;
+    justify-content: center;
+}
+
+.CNT-ICARR a{
+    text-decoration: none;
+    background-color: white;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 25%;
+}
+
+.CNT-ICARR a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9s;
+    border-radius: 50%;
+}
+
+.CP{
+    width: 100%;
+    background: black;
+    text-align: center;
+    padding-right: 0.8%;
+}
+
+.CP p{
+    color: white;
+}
+
+.CP span{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.PA{
+    text-decoration: none;
+    margin: 5px;
+    font-size:small ;
+}
+
+@media screen and(max-width: 768px){
+    footer{
+        font-size: 14px;
+        padding: 15px;
+    }
+}
